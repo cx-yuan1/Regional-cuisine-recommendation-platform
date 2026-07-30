@@ -1,4 +1,4 @@
-﻿# 🍜 基于 Flask 的地域美食推荐平台
+﻿## 🍜 基于 Flask 的地域美食推荐平台
 
 # 获取方式---本文件是项目的部分文件，有需要可看【煮页】
 
@@ -189,7 +189,6 @@ python -m pip install --upgrade pip
 6、图片上传或显示失败：请检查 `backend/uploads` 目录是否存在、是否具有读写权限，以及数据库中的图片路径是否正确。
 
 7、AI 对话接口不可用：请确认 `backend/.env` 中 `DEEPSEEK_API_KEY` 已配置为有效 Key，并确保服务器可以访问 DeepSeek API。
-
 
 
 
