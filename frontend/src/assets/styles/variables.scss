@@ -1,0 +1,127 @@
+// 全局样式变量 - 使用淡色主题
+:root {
+  // 主色调 - 淡蓝色
+  --primary-color: #409EFF;
+  --primary-light: #79bbff;
+  --primary-lighter: #a0cfff;
+  --primary-extra-light: #d9ecff;
+  
+  // 背景色
+  --bg-color: #f5f7fa;
+  --bg-color-light: #fafafa;
+  --card-bg: #ffffff;
+  
+  // 文字颜色
+  --text-primary: #303133;
+  --text-regular: #606266;
+  --text-secondary: #909399;
+  --text-placeholder: #C0C4CC;
+  
+  // 边框颜色
+  --border-color: #DCDFE6;
+  --border-color-light: #E4E7ED;
+  --border-color-lighter: #EBEEF5;
+  --border-color-extra-light: #F2F6FC;
+  
+  // 成功色
+  --success-color: #67C23A;
+  --success-light: #95d475;
+  --success-lighter: #b3e19d;
+  
+  // 警告色
+  --warning-color: #E6A23C;
+  --warning-light: #ebb563;
+  --warning-lighter: #f0c78a;
+  
+  // 危险色
+  --danger-color: #F56C6C;
+  --danger-light: #f78989;
+  --danger-lighter: #fab6b6;
+  
+  // 信息色
+  --info-color: #909399;
+  --info-light: #a6a9ad;
+  --info-lighter: #c8c9cc;
+  
+  // 阴影
+  --box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+  --box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  
+  // 圆角
+  --border-radius-base: 4px;
+  --border-radius-small: 2px;
+  --border-radius-round: 20px;
+  --border-radius-circle: 100%;
+}
+
+// 管理后台侧边栏渐变背景
+.admin-sidebar {
+  background: linear-gradient(180deg, #f0f4f8 0%, #f8f9fa 100%);
+}
+
+// 卡片样式
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color-lighter);
+  border-radius: var(--border-radius-base);
+  box-shadow: var(--box-shadow-base);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    box-shadow: var(--box-shadow-light);
+    transform: translateY(-2px);
+  }
+}
+
+// 页面容器
+.page-container {
+  padding: 20px;
+  background: var(--bg-color);
+  min-height: calc(100vh - 60px);
+}
+
+// 内容容器
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  border-radius: var(--border-radius-base);
+  box-shadow: var(--box-shadow-base);
+  padding: 24px;
+}
+
+// 表格居中对齐
+.el-table {
+  .cell {
+    text-align: center;
+  }
+}
+
+.el-table th > .cell {
+  text-align: center;
+}
+
+// 按钮组间距
+.button-group {
+  .el-button + .el-button {
+    margin-left: 10px;
+  }
+}
+
+// 表单项间距
+.form-item-group {
+  .el-form-item {
+    margin-bottom: 22px;
+  }
+}
+
+// 响应式设计
+@media (max-width: 768px) {
+  .page-container {
+    padding: 10px;
+  }
+  
+  .content-container {
+    padding: 16px;
+  }
+}
