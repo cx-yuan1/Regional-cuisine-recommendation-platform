@@ -1,6 +1,6 @@
 """
 公告相关路由
-处理公告列表、详情等
+处理公告列表、详情等。
 """
 from flask import Blueprint, request
 from datetime import datetime
