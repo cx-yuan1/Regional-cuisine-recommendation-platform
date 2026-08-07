@@ -2,7 +2,7 @@
 
 # 获取方式---本文件是项目的部分文件，有需要可看【煮页】
 
-# 联系🐧: 3660038549
+# 联系🐧: 3660038549（毕业设计-论文）
 
 <br>
 
@@ -63,28 +63,6 @@ MySQL 数据库：建议 MySQL 8.0，需提前导入 `food_recommend.sql`
 9、实现商家入驻申请、商家资料维护、美食管理、经营统计和评论回复；
 
 10、实现管理员后台，支持用户管理、商家审核、分类管理、美食管理、评论管理、公告管理、轮播图管理和数据统计。
-
-#### 默认账号
-
-[管理员]
-
-账号：`admin`
-
-密码：`admin123`
-
-[普通用户]
-
-账号：`zhangsan`
-
-密码：`123456`
-
-[商家用户]
-
-账号：`merchant1`
-
-密码：`123456`
-
-> 说明：以上账号来自 `food_recommend.sql` 初始化数据，若自行修改 SQL 或数据库数据，请以实际数据为准。
 
 #### 核心模块
 
@@ -185,11 +163,7 @@ python -m pip install --upgrade pip
 
 4、前端启动失败：请检查 Node.js 版本，建议使用 `Node.js 18` 或 `Node.js 20`，并重新执行 `npm install`。
 
-5、前端接口请求失败：确认后端已启动在 `http://localhost:5000`，并检查 `frontend/vite.config.ts` 中 `/api` 代理配置。
-
-6、图片上传或显示失败：请检查 `backend/uploads` 目录是否存在、是否具有读写权限，以及数据库中的图片路径是否正确。
-
-7、AI 对话接口不可用：请确认 `backend/.env` 中 `DEEPSEEK_API_KEY` 已配置为有效 Key，并确保服务器可以访问 DeepSeek API。
+5、AI 对话接口不可用：请确认 `backend/.env` 中 `DEEPSEEK_API_KEY` 已配置为有效 Key，并确保服务器可以访问 DeepSeek API。
 
 
 
